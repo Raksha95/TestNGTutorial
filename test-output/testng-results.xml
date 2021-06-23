@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="1" ignored="0" total="9" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="92" started-at="2021-03-31T06:48:55Z" finished-at="2021-03-31T06:48:55Z">
+    <groups>
+    </groups>
+    <test name="Loan" duration-ms="92" started-at="2021-03-31T06:48:55Z" finished-at="2021-03-31T06:48:55Z">
+      <class name="Test.Day2">
+        <test-method status="PASS" signature="personalLoan()[pri:0, instance:Test.Day2@396a51ab]" name="personalLoan" duration-ms="3" started-at="2021-03-31T12:18:55Z" finished-at="2021-03-31T12:18:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- personalLoan -->
+      </class> <!-- Test.Day2 -->
+      <class name="Test.Day3">
+        <test-method status="FAIL" signature="LoginAPICarLoan(java.lang.String)[pri:0, instance:Test.Day3@51081592]" name="LoginAPICarLoan" duration-ms="0" started-at="2021-03-31T12:18:55Z" finished-at="2021-03-31T12:18:55Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'URL' is required by @Test on method LoginAPICarLoan but has not been marked @Optional or defined
+in D:\Debayan\Workspace\Eclipse\TestNGTutorial\testng2.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'URL' is required by @Test on method LoginAPICarLoan but has not been marked @Optional or defined
+in D:\Debayan\Workspace\Eclipse\TestNGTutorial\testng2.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:199)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:443)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:568)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1293)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:1020)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1110)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginAPICarLoan -->
+        <test-method status="PASS" signature="MobileLoginCarLoan()[pri:0, instance:Test.Day3@51081592]" name="MobileLoginCarLoan" duration-ms="4" started-at="2021-03-31T12:18:55Z" finished-at="2021-03-31T12:18:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobileLoginCarLoan -->
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:Test.Day3@51081592]" name="BeforeMethod" is-config="true" duration-ms="1" started-at="2021-03-31T12:18:55Z" finished-at="2021-03-31T12:18:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="SKIP" signature="WebLoginCarLoan()[pri:0, instance:Test.Day3@51081592]" name="WebLoginCarLoan" duration-ms="0" started-at="2021-03-31T12:18:55Z" depends-on-methods="Test.Day3.LoginAPICarLoan, Test.Day3.MobileLoginCarLoan" finished-at="2021-03-31T12:18:55Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Day3.WebLoginCarLoan()[pri:0, instance:Test.Day3@51081592] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Day3.WebLoginCarLoan()[pri:0, instance:Test.Day3@51081592] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1068)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebLoginCarLoan -->
+      </class> <!-- Test.Day3 -->
+      <class name="Test.Day1">
+        <test-method status="PASS" signature="first()[pri:0, instance:Test.Day1@5034c75a]" name="first" is-config="true" duration-ms="7" started-at="2021-03-31T12:18:55Z" finished-at="2021-03-31T12:18:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- first -->
+        <test-method status="PASS" signature="addition()[pri:0, instance:Test.Day1@5034c75a]" name="addition" duration-ms="9" started-at="2021-03-31T12:18:55Z" finished-at="2021-03-31T12:18:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addition -->
+        <test-method status="PASS" signature="demo()[pri:0, instance:Test.Day1@5034c75a]" name="demo" duration-ms="3" started-at="2021-03-31T12:18:55Z" finished-at="2021-03-31T12:18:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- demo -->
+      </class> <!-- Test.Day1 -->
+      <class name="Test.Day4">
+        <test-method status="PASS" signature="LoginAPIHomeLoan()[pri:0, instance:Test.Day4@9629756]" name="LoginAPIHomeLoan" duration-ms="6" started-at="2021-03-31T12:18:55Z" finished-at="2021-03-31T12:18:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginAPIHomeLoan -->
+        <test-method status="PASS" signature="MobileLoginHomeLoan()[pri:0, instance:Test.Day4@9629756]" name="MobileLoginHomeLoan" duration-ms="1" started-at="2021-03-31T12:18:55Z" finished-at="2021-03-31T12:18:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobileLoginHomeLoan -->
+        <test-method status="PASS" signature="WebLoginHomeLoan()[pri:0, instance:Test.Day4@9629756]" name="WebLoginHomeLoan" duration-ms="2" started-at="2021-03-31T12:18:55Z" finished-at="2021-03-31T12:18:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebLoginHomeLoan -->
+      </class> <!-- Test.Day4 -->
+    </test> <!-- Loan -->
+  </suite> <!-- Suite -->
+</testng-results>
